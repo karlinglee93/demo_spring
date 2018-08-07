@@ -2,11 +2,15 @@ package com.how2java.pojo;
 
 import javax.annotation.Resource;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("p")
 public class Product {
 
 	private int id;
-	private String name;
-	@Resource(name = "c")
+	private String name = "product1";
+	@Autowired
 	private Category category;
 
 	public int getId() {
