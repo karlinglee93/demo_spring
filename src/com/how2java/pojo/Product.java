@@ -6,7 +6,6 @@ public class Product {
 
 	private int id;
 	private String name;
-	@Autowired
 	private Category category;
 
 	public int getId() {
@@ -29,6 +28,7 @@ public class Product {
 		return category;
 	}
 
+	@Autowired
 	public void setCategory(Category category) {
 		this.category = category;
 	}

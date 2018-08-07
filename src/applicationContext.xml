@@ -16,7 +16,7 @@
 
 	<context:annotation-config />
 	<bean name="c" class="com.how2java.pojo.Category">
-		<property name="name" value="category 1" />
+		<property name="name" value="category1" />
 	</bean>
 	<bean name="p" class="com.how2java.pojo.Product">
 		<property name="name" value="product1" />
