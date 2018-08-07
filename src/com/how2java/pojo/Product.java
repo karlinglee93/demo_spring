@@ -1,10 +1,12 @@
 package com.how2java.pojo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Product {
 
 	private int id;
 	private String name;
-	// 对Product对象，注入一个Category对象
+	@Autowired
 	private Category category;
 
 	public int getId() {
